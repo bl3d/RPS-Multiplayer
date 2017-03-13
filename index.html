@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RPS Multiplayer</title> 
+ 
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">    
+</head>
+
+<body>
+
+
+  <div id="container"> 
+
+      <h1 id="gameTitle">Rock, Paper, Scissors!</h1>
+
+      <div id="playerInfo">
+        <form id="createPlayers">
+          <input type="text" class="formInput" id="playerName"  placeholder="Name"> 
+          <button type="submit" id="playerName_btn">Start</button>             
+        </form>
+        <h4 id="userName"></h4>
+        <h4 id="playerStatus"></h4>
+      </div>
+
+      <ul id="playerMain">
+        <li id="player1_main" class="pData"></li>
+        <li id="gameResults" class="pData"></li>
+        <li id="player2_main" class="pData"></li>
+      </ul>
+
+      <div id="messageZone">
+        <div id="chatResults"></div> 
+        <form id="chatCompose">
+          <input type="text" class="formInput" id="playerChatField"> 
+          <button type="submit" id="playerChat_btn">Send</button>             
+        </form>        
+      </div>
+
+  </div>
+
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <!-- Game Script -->
+  <script src="assets/javascript/RPS_multiplayer.js"></script>
+
+</body>
+
+</html>
