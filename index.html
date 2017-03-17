@@ -17,26 +17,38 @@
 
       <h1 id="gameTitle">Rock, Paper, Scissors!</h1>
 
-      <div id="playerInfo">
+      <div id="playerInfo" class="mainWidth">
         <form id="createPlayers">
           <input type="text" class="formInput" id="playerName"  placeholder="Name"> 
-          <button type="submit" id="playerName_btn">Start</button>             
+          <button type="submit" id="playerName_btn" class="submitBtn">Start</button>             
         </form>
         <h4 id="userName"></h4>
         <h4 id="playerStatus"></h4>
       </div>
 
-      <ul id="playerMain">
-        <li id="player1_main" class="pData"></li>
-        <li id="gameResults" class="pData"></li>
-        <li id="player2_main" class="pData"></li>
+      <ul id="playerMain" class="mainWidth">
+        <li id="player1_main" class="pData">
+          <h4 class="pName"></h4>
+          <h1 class="large"></h1>
+          <div class="rpsBtnHolder"></div>
+          <div class="pResults"></div>
+        </li>
+        <li id="gameResults" class="pData">
+          <h1 class="large"></h1>
+        </li>
+        <li id="player2_main" class="pData">
+          <h4 class="pName"></h4>
+          <h1 class="large"></h1>
+          <div class="rpsBtnHolder"></div>
+          <div class="pResults"></div>
+        </li>
       </ul>
 
-      <div id="messageZone">
+      <div id="messageZone" class="mainWidth">
         <div id="chatResults"></div> 
         <form id="chatCompose">
           <input type="text" class="formInput" id="playerChatField"> 
-          <button type="submit" id="playerChat_btn">Send</button>             
+          <button type="submit" id="playerChat_btn" class="submitBtn">Send</button>             
         </form>        
       </div>
 
